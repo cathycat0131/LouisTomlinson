@@ -1,0 +1,63 @@
+p{
+	color:black;
+	text-align: center;
+	font-size: 18px;
+	font-family: Verdana, sans-serif;
+}
+
+h1{
+	text-align: center;
+	font-weight: bold;
+	border: double;
+	padding: 10px;
+	font-family: fantasy;
+}
+
+#album,#website{
+	text-align: center;
+	font-size: 18px;
+	font-family: Verdana, sans-serif;
+	line-height: 40px;
+
+}
+
+#website a:link, a:visited{
+	text-decoration: none;
+	color: blue;
+	
+}
+
+#album a:link, a:visited{
+	text-decoration: none;
+	background-color: white;
+	border: 1px solid white;
+	color: blue;
+	
+}
+
+#website a:hover, a:active {
+	text-decoration: underline;
+	color: purple;
+}
+#album a:hover, a:active {
+	text-decoration: underline;
+	color: purple;
+}
+
+section h2{
+	text-align: center;
+	border: double;
+	padding: 10px;
+	font-family: fantasy;
+	font-weight: bold;
+}
+
+h3{
+	text-align: center;
+	font-weight: bold;
+	font-family: Verdana, sans-serif;
+}
+
+#intro{
+	font-style: italic;
+}
