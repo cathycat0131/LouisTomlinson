@@ -65,3 +65,10 @@ h3{
 #intro{
 	font-style: italic;
 }
+
+#Quotes p{
+	font-style: italic; 
+	font-weight: bold;
+}
+
+
