@@ -1,17 +1,20 @@
+
+body{
+	background-color: rgba(250, 249, 246,0.1);
+}
 p{
-	color:#200B06;
+	color:rgb(54, 69, 79);
 	text-align: center;
 	font-size: 18px;
 	font-family: Verdana, Arial, sans-serif;
 }
 
 h1{
-	color: #200B06;
+	color: rgb(31, 81, 255);
 	text-align: center;
 	font-weight: bold;
-	border: double;
 	padding: 20px;
-	font-family: fantasy;
+	font-family: Verdana, Arial, sans-serif;
 }
 
 #contents{
@@ -37,7 +40,7 @@ h1{
 
 #website a:link, a:visited{
 	text-decoration: none;
-	color: 	#1F51FF ;
+	color: rgb(54, 69, 79) ;
 	
 }
 
@@ -45,7 +48,7 @@ h1{
 	text-decoration: none;
 	background-color: white;
 	border: 1px solid white;
-	color: 	#1F51FF ;
+	color: rgb(54, 69, 79) ;
 	
 }
 
@@ -60,16 +63,16 @@ h1{
 
 section h2{
 	text-align: center;
-	color: #200B06;
-	border: double;
+	color: rgb(54, 69, 79);
 	padding: 15px;
-	font-family: fantasy;
+	font-family: Verdana, Arial, sans-serif;
 	font-weight: bold;
+	background-color: rgba(240, 255, 255);
 }
 
 h3{
 	text-align: center;
-	color: #200B06;
+	color: rgb(54, 69, 79);
 	font-weight: bold;
 	font-family: Verdana, Arial, sans-serif;
 }
@@ -83,4 +86,61 @@ h3{
 	font-weight: bold;
 }
 
+#title:hover, h2:hover{
+	color: rgba(137, 207, 240,1);
+}
+
+.SongLyrics{
+	border:1px solid rgba(128, 128, 128,0.5);
+	height: 600px;
+	margin:10px 100px 10px 100px;
+	padding: 5px 100px 10px 100px;
+	overflow-y: scroll;
+	text-align:center;
+	width: 60% center;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+	cursor: pointer; 
+	color: white;
+	font-size: 20px;
+	transition-duration: 0.4s;
+}
+
+.float:hover{
+	background-color:rgb(65, 105, 225);
+	width:80px;
+	height:80px;
+	transition-duration: 0.4s;
+}
+
+#myButton {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myButton:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
 
