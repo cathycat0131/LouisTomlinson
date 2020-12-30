@@ -3,7 +3,9 @@ body{
    color: rgb(119, 119, 119);
 }
 p{
-	font-size: 16px;
+	font-size: 18px;
+	margin-left:15px;
+	margin-right:15px;
 }
 h3{
     margin: 10px 0 30px 0;
@@ -32,8 +34,8 @@ h5{
 .person {
     border: 10px solid transparent;
     margin-bottom: 25px;
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
     opacity: 0.7;
 }
 
@@ -54,7 +56,26 @@ h5{
 @media (max-width: 600px) {
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-	}
+	}	
+}
+
+@media (max-width: 600px) {
+    #nav-quotes li{
+	 width: 25%	 
+}
+}
+
+@media (min-width: 601px){
+	#nav-quotes li{
+	 font-size: 18px;
+	 width: 8.33%;
+
+}
+}
+
+#nav-quotes li{
+	text-align: center;
+	letter-spacing: 1px;  
 }
 
 .bg-1 {
@@ -86,12 +107,6 @@ h5{
     border: none;
     border-radius: 0;
     cursor: pointer;
-}
-
-#nav-quotes li{
-	 width: 8.33%;
-	 font-size: 18px;
-	 text-align: center;
 }
 
 .thumbnail:hover{
@@ -160,6 +175,10 @@ h5{
     font-size: 12px !important;
     letter-spacing: 4px;
     opacity: 0.9;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .navbar li a, .navbar .navbar-brand { 
