@@ -85,6 +85,11 @@ h5{
     padding: 0 0 15px 0;
     border: none;
     border-radius: 0;
+    cursor: pointer;
+}
+
+.thumbnail:hover{
+	box-shadow: 4px 4px 3px #999;
 }
 
 .thumbnail p {
@@ -199,7 +204,9 @@ textarea {
     resize: none;
 }
 
-
+a{
+	color: #fff;
+}
 
 
 
