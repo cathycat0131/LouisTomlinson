@@ -88,6 +88,12 @@ h5{
     cursor: pointer;
 }
 
+#nav-quotes li{
+	 width: 8.33%;
+	 font-size: 18px;
+	 text-align: center;
+}
+
 .thumbnail:hover{
 	box-shadow: 4px 4px 3px #999;
 }
@@ -129,6 +135,10 @@ h5{
 	text-align: center;
 	font-size: 16px;
 
+}
+
+#Jan, #Feb, #Mar, #Apr, #May, #Jun, #Jul, #Aug, #Sep, #Oct, #Nov, #Dec{
+	text-align: center;
 }
 
 .nav-tabs li a {
