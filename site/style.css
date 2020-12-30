@@ -1,4 +1,214 @@
+body{
+   font: 400 15px/1.8 Lato, sans-serif;
+   color: rgb(119, 119, 119);
+}
+p{
+	font-size: 16px;
+}
+h3{
+    margin: 10px 0 30px 0;
+    letter-spacing: 10px;      
+    font-size: 20px;
+    color: #111;
+}
+h3{
+	font-size: 30px;
+}
 
+h5{
+	margin: 10px 0 10px 0;
+	font-weight: 600;
+    letter-spacing: 2px;   
+    font-size: 20px;
+}
+
+#Lyrics{
+	margin-top: 20px;
+}
+.container {
+    padding: 80px 120px;
+}
+ 
+.person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 50%;
+    height: 50%;
+    opacity: 0.7;
+}
+
+.person:hover {
+    border-color: #f1f1f1;
+}
+
+.carousel-inner img {
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%); /* make all photos black and white */ 
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+}
+.carousel-caption h3 {
+    color: #fff !important;
+}
+
+@media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+	}
+}
+
+.bg-1 {
+    background: #2d2d30;
+    color: #bdbdbd;
+}
+
+.bg-1 h3 {color: #fff;}
+
+.bg-1 p {font-style: italic;}
+
+
+.list-group-item:first-child {
+    border-top-right-radius: 5;
+    border-top-left-radius: 5;
+    margin-top: 30px;
+}
+.list-group-item{
+	color: #777;
+}
+
+.list-group-item:last-child {
+    border-bottom-right-radius: 5;
+    border-bottom-left-radius: 5;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail p {
+    margin-top: 15px;
+    color: #555;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 0;
+    transition: .2s;
+}
+
+.btn:hover, .btn:focus {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #000;
+}
+.modal-header, h4, .close {
+    background-color: #333;
+    color: #fff !important;
+    text-align: center;
+    font-size: 30px;
+    font: 400 30px/1 Lato, sans-serif;
+}
+
+.modal-header, .modal-body {
+    padding: 40px 50px;
+}
+
+.modal-body{
+	height: 400px;
+	overflow: scroll;
+	color: #111;
+	text-align: center;
+	font-size: 16px;
+
+}
+
+.nav-tabs li a {
+    color: #777;
+}
+
+#googleMap {
+    width: 100%;
+    height: 400px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}  
+
+.navbar {
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: rgb(45, 45, 48);
+    border: 0;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+
+.navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+}
+
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
+
+.navbar-nav li.active a {
+    color: #fff !important;
+    background-color: #29292c !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.open .dropdown-toggle {
+    color: #fff;
+    background-color: #555 !important;
+}
+
+.dropdown-menu li a {
+    color: #000 !important;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #555 !important;
+}
+
+footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding: 32px;
+}
+footer a {
+    color: #f5f5f5;
+}
+
+footer a:hover {
+    color: #777;
+    text-decoration: none;
+}  
+
+.form-control {
+    border-radius: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*
 body{
 	background-color: rgba(250, 249, 246,0.1);
 }
@@ -126,26 +336,7 @@ h3{
 	height:80px;
 	transition-duration: 0.4s;
 }
-
-#myButton {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
-}
-
-#myButton:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
-}
+/*
 
 ul {
   list-style-type: none;
@@ -179,6 +370,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
+/*
 li a:hover,a:active {
   background-color: rgb(31, 81, 255);
   color: white;
