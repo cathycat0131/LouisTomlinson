@@ -49,6 +49,20 @@ h5{
     width: 100%; /* Set width to 100% */
     margin: auto;
 }
+
+#carousel-inner-pictures img{
+    filter: grayscale(20%); 
+    width: 100%; /* make all photos black and white */ 
+    position: relative;
+  	overflow: hidden;
+
+}
+
+.carousel-inner-pictures::after {
+  display: block;
+  clear: both;
+  content: "";
+}
 .carousel-caption h3 {
     color: #fff !important;
 }
@@ -72,7 +86,38 @@ h5{
 
 }
 }
+@media (min-width: 601px){
+#carousel-inner-pictures{
+	width:80%;
+	margin:auto;
+}
+#container-pictures{
+	background-color: #fff;
+	padding: 80px 120px;
+}
+}
 
+@media (max-width: 600px){
+#carousel-inner-pictures{
+	width: 100%;
+	margin:auto;
+}
+
+#container-pictures{
+	background-color: #fff;
+	padding: 80px 0px;
+}
+}
+
+
+#container-pictures h3{
+	color: #111;
+}
+
+#container-pictures p{
+	color: rgb(119, 119, 119);
+	letter-spacing: 1px;
+}
 #nav-quotes li{
 	text-align: center;
 	letter-spacing: 1px;  
