@@ -103,12 +103,32 @@ h5{
 	margin:auto;
 }
 
+.modal-header, .modal-body {
+    padding: 20px 30px;
+}
+
 #container-pictures{
 	background-color: #fff;
 	padding: 80px 0px;
 }
+
+.person {
+    border: 10px solid transparent;
+    margin-bottom: 25px;
+    width: 90%;
+    height: 90%;
+    opacity: 0.9;
 }
 
+.container {
+    padding: 30px 60px;
+}
+
+
+.thumbnail img{
+	width: 100%
+}
+}
 
 #container-pictures h3{
 	color: #111;
@@ -149,10 +169,7 @@ h5{
 
 .thumbnail {
     padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-    cursor: pointer;
-}
+ }
 
 .thumbnail:hover{
 	box-shadow: 4px 4px 3px #999;
