@@ -67,26 +67,26 @@ h5{
     color: #fff !important;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
 	}	
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     #nav-quotes li{
 	 width: 25%	 
 }
 }
 
-@media (min-width: 601px){
+@media (min-width: 801px){
 	#nav-quotes li{
 	 font-size: 18px;
 	 width: 8.33%;
 
 }
 }
-@media (min-width: 601px){
+@media (min-width: 801px){
 #carousel-inner-pictures{
 	width:80%;
 	margin:auto;
@@ -95,9 +95,23 @@ h5{
 	background-color: #fff;
 	padding: 80px 120px;
 }
-}
 
-@media (max-width: 600px){
+}
+@media(min-width: 801px){
+	.img-quotes{
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px #808080;
+	width :40%;
+}
+}
+@media(max-width: 800px){
+	.img-quotes{
+	border-radius: 10px;
+	box-shadow: 1px 1px 2px #808080;
+	width :80%;
+}
+}
+@media (max-width: 800px){
 #carousel-inner-pictures{
 	width: 100%;
 	margin:auto;
@@ -121,13 +135,9 @@ h5{
 }
 
 .container {
-    padding: 30px 60px;
+    padding: 30px 20px;
 }
 
-
-.thumbnail img{
-	width: 100%
-}
 }
 
 #container-pictures h3{
@@ -169,6 +179,7 @@ h5{
 
 .thumbnail {
     padding: 0 0 15px 0;
+    border: none;
  }
 
 .thumbnail:hover{
@@ -180,6 +191,9 @@ h5{
     color: #555;
 }
 
+#album li{
+	font-size: 16px;
+}
 .btn {
     padding: 10px 20px;
     background-color: #333;
@@ -299,10 +313,7 @@ a{
 	color: #fff;
 }
 
-.img-quotes{
-	border-radius: 10px;
-	box-shadow: 1px 1px 2px #808080;
-}
+
 
 
 
