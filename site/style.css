@@ -101,7 +101,7 @@ h5{
 	.img-quotes{
 	border-radius: 10px;
 	box-shadow: 1px 1px 2px #808080;
-	width :40%;
+	width :30%;
 }
 }
 @media(max-width: 800px){
@@ -146,6 +146,10 @@ h5{
 	width: 100%;
 }
 
+}
+
+#TourInfo{
+	font-size: 16px;
 }
 
 #container-pictures h3{
