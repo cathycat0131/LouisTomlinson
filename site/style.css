@@ -33,11 +33,11 @@ h5{
 }
  
 .person {
-    border: 10px solid transparent;
     margin-bottom: 25px;
     width: 40%;
     height: 40%;
     opacity: 0.9;
+    box-shadow: 3px 3px 4px #808080;
 }
 
 .person:hover {
