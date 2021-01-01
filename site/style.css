@@ -138,6 +138,14 @@ h5{
     padding: 30px 20px;
 }
 
+.thumbnail img{
+	width: 100%;
+}
+
+#TourDate {
+	width: 100%;
+}
+
 }
 
 #container-pictures h3{
@@ -312,7 +320,6 @@ textarea {
 a{
 	color: #fff;
 }
-
 
 
 
