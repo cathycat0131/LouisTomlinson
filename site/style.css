@@ -175,6 +175,9 @@ h5{
 
 .bg-1 p {font-style: italic;}
 
+#posts-list.has-comments li.no-comments {
+  display: none;
+}
 
 .list-group-item:first-child {
     border-top-right-radius: 5;

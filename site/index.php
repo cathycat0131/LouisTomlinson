@@ -14,6 +14,8 @@
   	<scrip>
   		console.log();
   	</scrip>
+    <script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 <nav class="navbar navbar-default navbar-fixed-top">
@@ -1398,8 +1400,9 @@ And it's only for the brave
 <a href="https://www.louis-tomlinson.com/#tour" id="TourInfo" target="_blank">Click here for More Tour Info</a> 
 </div>
 
-<!-- Container (Contact Section) -->
-<div id="contact" class="container">
+<!-- Container (Comment Section) -->
+<div id="comment-section" class="container">
+  <form method=”post” name=”comment_form” action=”post_comment.php” id="commentForm">
   <h3 class="text-center">COMMENT</h3>
   <div class="text-center">
   <img src="Image/Louis1.gif">
@@ -1422,11 +1425,39 @@ And it's only for the brave
       <br>
       <div class="row">
         <div class="col-md-12 form-group">
-          <button class="btn pull-right" type="submit">Send</button>
+          <input type="hidden" name="comment_post_ID" value="<?php echo($comment_post_ID); ?>" id="comment_post_ID" />
+          <button class="btn pull-right" type="submit" value="Submit comment">Submit</button>
         </div>
       </div>
     </div>
   </div>
+</form>
+</div>
+
+<ol id="posts-list" class="hfeed<?php echo($has_comments?' has-comments':’); ?>">
+  <li class="no-comments">Be the first to add a comment.</li>
+  <?php
+    foreach ($comments as $comment) {
+      ?>
+      <li><article id="comment_<?php echo($comment['id']); ?>" class="hentry">  
+        <footer class="post-info">
+          <abbr class="published" title="<?php echo($comment['date']); ?>">
+            <?php echo( date('d F Y', strtotime($comment['date']) ) ); ?>
+          </abbr>
+
+          <address class="vcard author">
+            By <a class="url fn" href="#"><?php echo($comment['comment_author']); ?></a>
+          </address>
+        </footer>
+
+        <div class="entry-content">
+          <p><?php echo($comment['comment']); ?></p>
+        </div>
+      </article></li>
+      <?php
+    }
+  ?>
+</ol>
 
 <br><br>
  <footer class="text-center">
@@ -1439,3 +1470,79 @@ And it's only for the brave
 
 </body>
 </html>
+
+<?php
+require('Persistence.php');
+$comment_post_ID = 1;
+$db = new Persistence();
+$comments = $db->get_comments($comment_post_ID);
+$has_comments = (count($comments) > 0);
+?>
+
+
+<!-- <? php
+require "comment-handler.php";
+$errors = ”;
+
+$myemail = ‘cathycat0131@gmail.com’;//<—–Put Your email address here. 
+
+if(empty($_POST[‘name’]) ||
+
+empty($_POST[’email’]) ||
+
+empty($_POST[‘comments’]))
+
+{
+
+$errors .= “\n Error: All fields are required”;
+
+}
+
+$name = $_POST[‘name’];
+
+$email_address = $_POST[’email’];
+
+$comments = $_POST[‘comments’];
+
+if (!preg_match(
+
+“/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i”, $email_address))
+
+{
+
+$errors .= “\n Error: Invalid email address”;
+
+}
+
+if( empty($errors))
+
+{
+
+$to = $myemail;
+
+$email_subject = “Contact form submission: $name”;
+
+$email_body = “You have received a comformation. “.
+
+” Here are the details:\n Name: $name \n “.
+
+“Email: $email_address\n Comments:\n $comments”;
+
+$headers = “From: $myemail\n”;
+
+$headers .= “Reply-To: $email_address”;
+
+mail($to,$email_subject,$email_body,$headers);
+
+//redirect to the ‘thank you’ page
+
+header(‘Location: index.html’);
+
+}
+
+$(function() {
+  $('#commentform').submit(handleSubmit);
+});
+?> -->
+
+
