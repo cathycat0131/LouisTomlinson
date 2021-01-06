@@ -1402,31 +1402,30 @@ And it's only for the brave
 
 <!-- Container (Comment Section) -->
 <div id="comment-section" class="container">
-  <form method=”post” name=”comment_form” action=”comment-handler.php” id="commentForm">
-  <h3 class="text-center">COMMENT</h3>
+  <form action="https://getform.io/f/8767bbc0-54eb-429e-b936-3bfec022b3d6" method="post" enctype="multipart/form-data" name="commentForm">
+  <h3 class="text-center">CONNECT</h3>
   <div class="text-center">
   <img src="Image/Louis1.gif">
   </div><br>
-  <p class="text-center"><em>Leave a message</em></p>
+  <p class="text-center"><em>Leave a message below.</em></p>
   <div class="row">
     <div class="col-md-4">
-      <p>Fan too? Drop a note.</p>
+      <p>Fan too? Drop a note to connect.</p>
     </div>
     <div class="col-md-8">
       <div class="row">
         <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <input class="form-control" id="name" name="name" placeholder="Full Name" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
         </div>
       </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comments" rows="5"></textarea>
       <br>
       <div class="row">
         <div class="col-md-12 form-group">
-          <input type="hidden" name="comment_post_ID" value="<?php echo($comment_post_ID); ?>" id="comment_post_ID" />
-          <button class="btn pull-right" type="submit" value="Submit comment">Submit</button>
+          <button class="btn pull-right" type="submit" value="Submit comment" ">Submit</button>
         </div>
       </div>
     </div>
