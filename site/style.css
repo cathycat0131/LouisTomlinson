@@ -26,6 +26,16 @@ h5{
     color: #111;
 }
 
+figure{
+  width: 200px;
+}
+figure img{
+  width: 100%;
+}
+figure figcaption{
+  text-align: center;
+}
+
 #Lyrics{
 	margin-top: 20px;
 }

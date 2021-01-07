@@ -5,15 +5,147 @@
 	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/	bootstrap/3.4.1/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="style.css">
+  	<link rel="stylesheet" href="PictureStyle.css">
   	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   	<script type="text/javascript" src="myScript.js"></script>
+  	<script type="text/javascript" src="PictureScript.js"></script>
 </head>
 <body>
- <div id="container"><br>
+ <div class="container"><br>
   <h3 class="text-center">PICTURES</h3>
+ </div>
+ <!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column-img">
+    <img src="Image/CharlieLightening/1.jpeg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    <img src="Image/CharlieLightening/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    <img src="Image/CharlieLightening/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    <img src="Image/CharlieLightening/4.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+  <div class="column-img">
+    <img src="Image/CharlieLightening/5.jpeg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+    <img src="Image/CharlieLightening/6.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+    <img src="Image/CharlieLightening/7.jpeg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+    <img src="Image/CharlieLightening/8.jpeg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+  </div>
+  <div class="column-img">
+    <img src="Image/CharlieLightening/13.jpeg" onclick="openModal();currentSlide(13)" class="hover-shadow">
+    <img src="Image/CharlieLightening/14.jpeg" onclick="openModal();currentSlide(14)" class="hover-shadow">
+    <img src="Image/CharlieLightening/15.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow">
+    <img src="Image/CharlieLightening/16.jpeg" onclick="openModal();currentSlide(16)" class="hover-shadow">
+  </div>
+  <div class="column-img">
+    <img src="Image/CharlieLightening/9.jpeg" onclick="openModal();currentSlide(9)" class="hover-shadow">
+    <img src="Image/CharlieLightening/10.jpeg" onclick="openModal();currentSlide(10)" class="hover-shadow">
+    <img src="Image/CharlieLightening/11.jpeg" onclick="openModal();currentSlide(11)" class="hover-shadow">
+    <img src="Image/CharlieLightening/12.jpeg" onclick="openModal();currentSlide(12)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 16</div>
+      <img src="Image/CharlieLightening/1.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 16</div>
+      <img src="Image/CharlieLightening/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 16</div>
+      <img src="Image/CharlieLightening/3.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 16</div>
+      <img src="Image/CharlieLightening/4.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">5 / 16</div>
+      <img src="Image/CharlieLightening/5.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 16</div>
+      <img src="Image/CharlieLightening/6.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 16</div>
+      <img src="Image/CharlieLightening/7.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">8 / 16</div>
+      <img src="Image/CharlieLightening/8.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">9 / 16</div>
+      <img src="Image/CharlieLightening/9.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 16</div>
+      <img src="Image/CharlieLightening/10.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 16</div>
+      <img src="Image/CharlieLightening/11.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">12 / 16</div>
+      <img src="Image/CharlieLightening/12.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">13 / 16</div>
+      <img src="Image/CharlieLightening/13.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">14 / 16</div>
+      <img src="Image/CharlieLightening/14.jpeg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">15 / 16</div>
+      <img src="Image/CharlieLightening/15.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">16 / 16</div>
+      <img src="Image/CharlieLightening/16.jpeg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="container"><br>
+  <p class="text-center">Shot by <a href="https://www.instagram.com/charlielightening/" target="_blank"><em>Charlie Lightening</em></a></p>
+ </div>
+
+
 </body>
 </html>
