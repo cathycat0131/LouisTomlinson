@@ -1,8 +1,10 @@
-// Open the Modal
-function openModal() {
-  document.getElementById("myModal").style.display = "block";
-}
 
+function openModal() {
+  var screenWidth = window.innerWidth;
+    if(screenWidth > 600){
+  document.getElementById("myModal").style.display = "block";
+};
+}
 // Close the Modal
 function closeModal() {
   document.getElementById("myModal").style.display = "none";
