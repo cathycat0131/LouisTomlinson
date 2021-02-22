@@ -277,9 +277,7 @@ figure figcaption{
     opacity: 0.9;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 .navbar li a, .navbar .navbar-brand { 
     color: #d5d5d5 !important;
