@@ -223,7 +223,7 @@ figure figcaption{
     background-color: #333;
     color: #f1f1f1;
     border-radius: 0;
-    transition: .2s;
+    transition: .1s;
 }
 
 .btn:hover, .btn:focus {
@@ -311,9 +311,11 @@ figure figcaption{
 
 footer {
     background-color: #2d2d30;
-    color: #f5f5f5;
+    color: #0f5f5f5;
     padding: 32px;
+    font-style: normal;
 }
+
 footer a {
     color: #f5f5f5;
 }
@@ -323,6 +325,8 @@ footer a:hover {
     text-decoration: none;
 }  
 
+
+
 .form-control {
     border-radius: 0;
 }
@@ -331,8 +335,16 @@ textarea {
     resize: none;
 }
 
-a{
+.btn a{
 	color: #fff;
+}
+
+.btn:hover a{
+    background-color: #fff;
+    color: #000;
+    transition: 0.1s;
+    text-decoration: none;
+    border: none;
 }
 
 
