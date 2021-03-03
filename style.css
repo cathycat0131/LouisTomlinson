@@ -61,6 +61,11 @@ figure figcaption{
     filter: grayscale(50%); /* make all photos black and white */ 
     width: 100%; /* Set width to 100% */
     margin: auto;
+
+}
+
+#myCarousel .carousel .carousel-item .item{
+    transition-duration: 5s;
 }
 
 #carousel-inner-pictures img{
@@ -68,6 +73,7 @@ figure figcaption{
     width: 100%; /* make all photos black and white */ 
     position: relative;
   	overflow: hidden;
+  	transition-duration: 5s;
 
 }
 
