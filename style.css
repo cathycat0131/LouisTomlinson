@@ -239,6 +239,11 @@ figure figcaption{
     border: none;
  }
 
+ .interview{
+ 	padding: 0 0 15px 0;
+    border: none;
+ }
+
 .thumbnail:hover{
 	box-shadow: 4px 4px 3px #999;
 }
@@ -310,10 +315,14 @@ figure figcaption{
     opacity: 0.9;
 }
 
+#myNavbarInterview .navbar li a, .navbar .navbar-brand{
+	color: #999;
+
+}
 
 
 .navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
+    color: #999 !important;
 }
 
 .navbar-nav li a:hover {
