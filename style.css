@@ -108,11 +108,20 @@ figure figcaption{
 	padding: 80px 120px;
 }
 
+#container-connect{
+	background-color: #fff;
+	padding: 80px 120px;
+}
+
 .img-quotes{
 	border-radius: 10px;
 	box-shadow: 1px 1px 2px #808080;
 	width :30%;
 }
+}
+
+#connectGif{
+	width: 50%;
 }
 
 @media(max-width: 800px){
@@ -136,6 +145,15 @@ figure figcaption{
 	padding: 80px 0px;
 }
 
+#container-connect{
+	background-color: #fff;
+	padding: 80px 0px;
+}
+
+#connectGif{
+	width: 90%;
+}
+
 .person {
     margin-bottom: 25px;
     width: 80%;
@@ -152,16 +170,18 @@ figure figcaption{
 }
 
 #TourDate {
-	width: 100%;
+	width: 95%;
 }
 
 #LouisTomlinsonInterview{
-	width: 100%;
+	width: 95%;
 }
 }
 
 
-
+#TourDate {
+	width: 70%;
+}
 
 #TourInfo{
 	font-size: 16px;
@@ -169,6 +189,16 @@ figure figcaption{
 
 #container-pictures h3{
 	color: #111;
+}
+
+#container-connect h3{
+	color: #111;
+}
+
+#container-connect p {
+	color: rgb(119, 119, 119);
+	letter-spacing: 1px;
+	font-style: normal;
 }
 
 #container-pictures p{
