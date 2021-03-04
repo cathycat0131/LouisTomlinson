@@ -50,10 +50,13 @@ figure figcaption{
     height: 40%;
     opacity: 0.9;
     box-shadow: 3px 3px 4px #808080;
+    transition: 300ms linear;
 }
 
 .person:hover {
     border-color: #f1f1f1;
+    transform: scale(1.1);
+	transition: 300ms linear;
 }
 
 .carousel-inner img {
@@ -243,6 +246,7 @@ figure figcaption{
 .thumbnail {
     padding: 0 0 15px 0;
     border: none;
+    transition: 100ms linear;
  }
 
  .interview{
@@ -251,8 +255,11 @@ figure figcaption{
  }
 
 .thumbnail:hover{
-	box-shadow: 4px 4px 3px #999;
+	border: none;
+	transform: scale(1.05);
+	transition: 200ms linear;
 }
+
 
 .thumbnail p {
     margin-top: 15px;
