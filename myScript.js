@@ -56,13 +56,10 @@ if(isValid()){
 }else{
 	alert("There was an error")
 }
-
-
-
-
-
-
-
-
 };
 
+
+
+
+//Moving Letter Script
+// Wrap every letter in a span
