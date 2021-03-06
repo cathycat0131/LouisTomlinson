@@ -127,6 +127,38 @@ figure figcaption{
 	box-shadow: 1px 1px 2px #808080;
 	width :30%;
 }
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.iconTwitter-bar{
+	position: fixed;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
 }
 
 #connectGif{
@@ -185,7 +217,41 @@ figure figcaption{
 #LouisTomlinsonInterview{
 	width: 95%;
 }
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
+
+.iconTwitter-bar{
+	position: fixed;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: ruby-base;
+  text-align: center;
+  padding: 7px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+}
+
+
+
 
 
 #TourDate {
@@ -403,33 +469,6 @@ textarea {
     border: none;
 }
 
-/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
-.icon-bar {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
 
-/* Style the icon bar links */
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
-}
-
-/* Style the social media icons with color, if you want */
-.icon-bar a:hover {
-  background-color: #000;
-}
-
-.twitter {
-  background: #55ACEE;
-  color: white;
-}
 
 
