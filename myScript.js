@@ -63,3 +63,14 @@ if(isValid()){
 
 //Moving Letter Script
 // Wrap every letter in a span
+var i = 0;
+var txt = 'LOUIS TOMLINSON'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("titleLouis").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}

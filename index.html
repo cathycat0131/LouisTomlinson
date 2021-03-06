@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  	<script type="text/javascript" src="myScript.js"></script>
+  	<script src="myScript.js"></script>
   	<scrip>
     <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101302241);</script>
     <script async src="//static.getclicky.com/js"></script>
@@ -26,6 +26,18 @@
 
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<script type="text/javascript">
+var i = 0;
+var txt = 'LOUIS TOMLINSON'; /* The text */
+var speed = 50; /* The speed/duration of the effect in milliseconds */
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("titleLouis").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -89,7 +101,7 @@
       <img src="Image/Louis-Tomlinson-Walls.jpeg" alt="Louis Tomlinson Album Walls">
       <div class="carousel-caption">
         <h3>Walls</h3>
-        <p>Louis Tomlinson's debuted album Walls.</p>
+        <marquee behavior="scroll" direction="left" style="font-size: 18px;" scrollamount="7">Louis Tomlinson's debuted album Walls.</marquee>
         <p></p>
       </div>
     </div>
@@ -144,7 +156,7 @@ Argentina, the USA and Canada. </p>
 
 
 <div class="container text-center" id="About">
-	<h3>LOUIS TOMLINSON</h3>
+	<h3 id = "titleLouis">LOUIS TOMLINSON</h3>
 	<P style="text-align: left">Louis William Tomlinson is an English singer and songwriter. He rose to fame as a member of the boy band One Direction. In 2010, he auditioned on the British music competition series The X Factor. After being eliminated as a solo performer, he was put into a group with four other contestants, forming One Direction.</P>
 	<p style="text-align: left">In 2019, Tomlinson released the singles "Two of Us", "Kill My Mind", "We Made It", "Don't Let It Break Your Heart" and "Walls", preceding his debut album Walls, released in January 31, 2020.</p>
   <p>-From Wikipedia</p>
@@ -1480,6 +1492,6 @@ Argentina, the USA and Canada. </p>
   <p style="font-size: 13px;font-style: normal">No copyright infringement is intended. <br>Claim no credit for any type of media content posted.<br>This page is made for personal project and entertainment ◟̽◞̽<br>© 2020 - 2021 louistinfo.com<br></p><p style="font-size: 10px;font-style: normal"></p>
   <a href="https://twitter.com/louistinfo_" target = "_blank"class="fa fa-twitter" style="font-size: 30px;"></a>
 </footer>
-
+<script type="text/javascript"></script>
 </body>
 </html>
