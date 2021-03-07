@@ -88,6 +88,20 @@ footer a:hover {
     text-decoration: underline;
 }  
 
+#disclaimer{
+	color: white; 
+	background-color: #CD5C5C; 
+	padding: 10px; 
+	border-radius: 5%;
+	margin-left: 20px;
+}
+
+#disclaimer:hover {
+	background-color: #fff; 
+	color: #CD5C5C; 
+}
+
+
 
 @media(max-width: 800px){
 	.container {
