@@ -367,6 +367,9 @@ figure figcaption{
 	font-size: 16px;
 
 }
+.modal-body p{
+	color: #111;
+}
 
 #Jan, #Feb, #Mar, #Apr, #May, #Jun, #Jul, #Aug, #Sep, #Oct, #Nov, #Dec{
 	text-align: center;
